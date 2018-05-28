@@ -1,0 +1,124 @@
+.background {
+  background-image: url("./src/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  /* background-position: top; */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 80vh;
+  width: 100%;
+}
+
+body {
+  font-size: 10px;
+  color: white;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2rem;
+  color: #fed136;
+  text-decoration: none;
+  margin-left: 15vw;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20vw;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav div:hover {
+  color: #fed136;
+}
+.image-hidden {
+  display: none;
+}
+
+.center-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center-text {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.heading-main {
+  display: block;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2vh;
+}
+
+.heading-sub {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif, bold;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 0.2rem;
+  position: relative;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+.btn-white {
+  margin-top: 3rem;
+  background-color: #fed136;
+  color: white;
+}
+
+.btn-white:hover {
+  background-color: #febf36;
+}
+@media (max-width: 900px) {
+  header {
+    background-color: #212529;
+  }
+  nav {
+    display: none;
+  }
+  header .logo {
+    font-family: "Kaushan Script", cursive;
+    font-size: 1rem;
+    color: #fed136;
+    margin-left: 10vw;
+  }
+  nav {
+    display: none;
+  }
+
+  .image-hidden {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5vw;
+  }
+}
